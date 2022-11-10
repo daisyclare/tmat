@@ -1,0 +1,89 @@
+<html>
+
+<head>
+    <title>Chuẩn đoán</title>
+    <style>
+        body {
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+            background-image: url(static/images/bg.jpg);
+            background-repeat: no-repeat;
+            background-size: auto;
+            justify-content: center;
+        }
+
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        h1 {
+            font-size: 50px;
+            text-align: center;
+            margin-top: 0px;
+            padding: 60px 0px ;
+        }
+
+        form {
+            display: flex;
+            justify-content: space-between;
+            height: 50vh;
+            justify-content: center;
+            align-items: center;
+            width: 60%;
+            text-align: center;
+            margin-left: 300px;
+        }
+
+        .upload {
+            font-size: 20px;
+            background-color: rgb(255, 252, 252);
+            border-radius: 10px;
+            outline: none;
+            width: 400px;
+            text-align: center;
+            color: rgb(30, 27, 27);
+            border: 2px solid black;
+        }
+
+        ::-webkit-file-upload-button {
+            color: rgb(255, 252, 252);
+            padding: 20px;
+            border: 2px solid rgb(188, 18, 18);
+            background-color: rgb(188, 18, 18);
+            border-radius: 15px;
+        }
+
+        ::-webkit-file-upload-button:hover {
+            border-radius: 10px;
+            border: 2px solid rgb(177, 174, 174);
+        }
+
+        input[type="submit"] {
+            position: absolute;
+            margin-top: 200px;
+            padding: 15px 15px;
+            background-color: rgb(84, 201, 114);
+            border-radius: 7px;
+            color: #fff;
+            font-size: 21px;
+            border: 2px solid rgb(153, 190, 167);
+        }
+
+        input[type="submit"]:hover {
+            background: rgb(4, 93, 4);
+        }
+    </style>
+</head>
+
+<body background="{{url_for('static',filename = 'images/bg.jpg')}}">
+
+    <h1>Chuẩn đoán bệnh và điều trị</h1>
+    <div id="wrapper">
+        <form action="/predict" method="post" enctype="multipart/form-data" onsubmit="showloading()">
+            <input type="file" name="image" class="upload">
+            <input type="submit" value="CHUẨN ĐOÁN">
+        </form>
+    </div>
+</body>
+</html>

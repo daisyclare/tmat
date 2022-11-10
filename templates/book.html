@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static',filename = 'fonts/fontawsome/css/all.css' )}}">
+    <link rel="stylesheet" href="{{url_for('static',filename = 'css/reset.css' )}}">
+    <link rel="stylesheet" href="{{url_for('static',filename = 'css/global.css' )}}">
+    <link rel="stylesheet" href="{{url_for('static',filename = 'css/main.css' )}}">
+
+    <title>Sách</title>
+</head>
+
+<body>
+    <div id="wrapper">
+        <div id="header">
+            <div class="container justify-content-between">
+                <a id=logo href="">
+                    <img src="{{url_for('static',filename = 'images/logo.png' )}}" alt="logo">
+                </a>
+                <h3 class="font-courier-new">Tomato Disease</h3>
+                <!-- end logo -->
+                <form action="" id="search">
+                    <input type="text" name="q" placeholder="Search">
+                    <button><i class="fa-solid fa-magnifying-glass"></i></button>
+                </form>
+            </div>
+        </div>
+        <!-- end header -->
+        <div id="wp-content" class="container">
+            <div id="content">
+                <div class="box new-post">
+                    <div class="box-head">
+                        <h3>SÁCH</h3>
+                    </div>
+                    <div class="box-body">
+                        <ul class="list-post">
+                            <li>
+                                <a href="" class="post-thumb">
+                                    <img src="{{url_for('static',filename = 'images/book1.jpg' )}}" alt="">
+                                </a>
+                                <div class="more-info">
+                                    <a href="" class="post-title">Kỹ thuật trồng, chăm sóc cho năng suất cao - Cà chua,
+                                        cà tím, khoai tây, ngô đậu
+                                        nuôi</a>
+                                    
+                                        <ul>
+                                            <li class="post-excerpt">Tác giả KS Nguyễn Thành Long (Biên soạn)</li>
+                                            <li class="post-excerpt">Nhà xuất bản NXB Hà Nội</li>
+                                            <li class="post-excerpt">Đơn vị phát hành Công ty Cổ Phần Tri thức Văn hóa
+                                                Sách Việt Nam - VINA BOOK JSC</li>
+                                            <li class="post-excerpt">Ngày xuất bản 2022</li>
+                                            <li class="post-excerpt">Kích thước 13 x 20.5 cm</li>
+                                        </ul>
+                                    
+                                </div>
+                            </li>
+                            <li>
+                                <a href="" class="post-thumb">
+                                    <img src="{{url_for('static',filename = 'images/book2.jpg' )}}" alt="">
+                                </a>
+                                <div class="more-info">
+                                    <a href="" class="post-title">SỔ TAY CÂY THUỐC VÀ VỊ THUỐC VIỆT NAM - ỨNG DỤNG NHỮNG BÀI THUỐC CHỮA BỆNH THƯỜNG GẶP TRONG DÂN GIAN</a>
+                                    
+                                        <ul>
+                                            <li class="post-excerpt">Tác giả: Diệu Tuệ</li>
+                                            <li class="post-excerpt">Nhà xuất bản: Nhà Xuất Bản Thế Giới</li>
+                                            <li class="post-excerpt">Công ty Phát hành: Nhà sách Nam Việt</li>
+                                            <li class="post-excerpt">Ngày xuất bản: 10-2018</li>
+                                            <li class="post-excerpt">Kích thước: 20 x 28 x 2cm</li>
+                                        </ul>       
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end content -->
+    </div>
+</body>
+
+</html>

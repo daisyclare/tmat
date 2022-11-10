@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/css/bootstrap.min.css"
+        integrity="sha384-VCmXjywReHh4PwowAiWNagnWcLhlEJLA5buUprzK8rxFgeH0kww/aWY76TfkUoSX" crossorigin="anonymous">
+
+    <title>Chuẩn đoán và điều trị</title>
+    <style>
+        body {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        * {
+            margin-top: 20px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        .border img {
+            border-radius: 15px;
+            border: 2px solid black;
+        }
+
+        .text-center {
+            text-align: center;
+            font-size: 40px;
+            font-weight: bold;
+        }
+
+        .img{
+            width: 400px;
+            height: 400px;
+        }
+        li{
+            text-align: justify
+        }
+    </style>
+
+</head>
+
+<body background="{{url_for('static',filename = 'images/Back.jpg')}}">
+    <div>
+        <h1 class="text-center">Dự đoán bệnh trên cây cà chua và <br> cách chữa bệnh</h1>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm">
+                <span class="border">
+                    <img src="{{url_for('static',filename = 'images/Tomato___Early_blight.JPG')}}" alt="User Image">
+                </span>
+            </div>
+            
+            <div class="col-sm">
+                <div>
+                    <h2 style="padding: 15px; background-color: rgb(15, 15, 15); color: white;text-align: center;">
+                        {{pred_output}} </h2>
+                </div>
+                <div class="details">
+                    <h4><b> Điều trị : </b> </h4>
+                    <ul>
+                        <p>Cà chua bị bạc lá sớm cần được chăm sóc ngay trước khi bệnh xâm nhập vào cây. Phun kỹ cây (cả
+                            phần dưới của lá) bằng Bonide Liquid Copper Fungides đậm đặc hoặc Bonide Tomato & Vegetable. Cả
+                            hai phương pháp xử lý này đều hữu cơ</p>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

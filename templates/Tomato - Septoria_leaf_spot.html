@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/css/bootstrap.min.css"
+        integrity="sha384-VCmXjywReHh4PwowAiWNagnWcLhlEJLA5buUprzK8rxFgeH0kww/aWY76TfkUoSX" crossorigin="anonymous">
+
+    <title>Chuẩn đoán và điều trị</title>
+    <style>
+        body {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        * {
+            margin-top: 20px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        .border img {
+            border-radius: 15px;
+            border: 2px solid black;
+        }
+
+        .text-center {
+            text-align: center;
+            font-size: 40px;
+            font-weight: bold;
+        }
+
+        .img{
+            width: 400px;
+            height: 400px;
+        }
+        li{
+            text-align: justify
+        }
+    </style>
+
+</head>
+
+<body background="{{url_for('static',filename = 'images/Back.jpg')}}">
+    <div>
+        <h1 class="text-center">Dự đoán bệnh trên cây cà chua và <br> cách chữa bệnh</h1>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm">
+                <span class="border">
+                    <img src="{{url_for('static',filename = 'images/Tomato___Septoria_leaf_spot')}}" alt="User Image">
+                </span>
+            </div>
+            
+            <div class="col-sm">
+                <div>
+                    <h2 style="padding: 15px; background-color: rgb(15, 15, 15); color: white;text-align: center;">
+                        {{pred_output}} </h2>
+                </div>
+                <div class="details">
+                    <h4><b> Điều trị : </b> </h4>
+                    <ul>
+                        <li><b>Loại bỏ các lá bị nhiễm bệnh: </b> Loại bỏ lá bị nhiễm bệnh ngay lập tức, và nhớ rửa tay và
+                        cắt tỉa kỹ lưỡng trước khi làm việc với cây không bị nhiễm bệnh.</li>
+                        <li><b>Xem xét các lựa chọn thuốc diệt nấm hữu cơ:</b> Thuốc diệt nấm có chứa đồng hoặc kali
+                        bicacbonat sẽ giúp ngăn ngừa sự lây lan của bệnh. Bắt đầu phun ngay khi các triệu chứng đầu tiên
+                        xuất hiện và làm theo hướng dẫn trên nhãn để tiếp tục quản lý.</li>
+                        <li><b>Xem xét thuốc diệt nấm hóa học:</b> Mặc dù các lựa chọn hóa học không phải là lý tưởng, nhưng
+                        chúng có thể là lựa chọn duy nhất để kiểm soát các bệnh nhiễm trùng nặng. Một trong những chất
+                        ít độc nhất và hiệu quả nhất là chlorothalonil (được bán dưới tên Fungonil và Daconil).</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

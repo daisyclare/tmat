@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static',filename = 'fonts/fontawsome/css/all.css' )}}">
+    <link rel="stylesheet" href="{{url_for('static',filename = 'css/reset.css' )}}">
+    <link rel="stylesheet" href="{{url_for('static',filename = 'css/global.css' )}}">
+    <link rel="stylesheet" href="{{url_for('static',filename = 'css/main.css' )}}">
+
+    <title>Trang chủ</title>
+</head>
+
+<body>
+    <div id="wrapper">
+        <div id="header">
+            <div class="container justify-content-between">
+                <a id=logo href="">
+                    <img src="{{url_for('static',filename = 'images/logo.png' )}}" alt="logo">
+                </a>
+                <h3 class="font-courier-new">Tomato Disease</h3>
+                <!-- end logo -->
+                <form action="" id="search">
+                    <input type="text" name="q" placeholder="Search">
+                    <button><i class="fa-solid fa-magnifying-glass"></i></button>
+                </form>
+            </div>
+            <div class="container">
+                <nav>
+                    <ul id="main-menu" class="d-flex">
+                        <li><a href=""><i class="fa-solid fa-house-user"></i><br>Trang chủ</a></li>
+                        <li><a href="cd"><i class="fa-solid fa-camera-retro"></i><br>Chuẩn đoán</a></li>
+                        <li><a href="book"><i class="fa-solid fa-book"></i><br>Sách</a></li>
+                        <li><a href=""><i class="fa-solid fa-face-smile"></i><br>Thông tin khác</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <!-- end header -->
+        <div id="wp-featured-post" class="container">
+            <div class="box featured-post">
+                <div class="box-head">
+                    <h3>GIỚI THIỆU</h3>
+                </div>
+                <div class="box-body">
+                    <p><b> <i> Việt Nam là một nước có nông nghiệp phát triển, năng suất nông nghiệp là thứ mà nền kinh
+                                tế phụ
+                                thuộc rất nhiều vào nó. Dịch bệnh trên cây trồng là mối nguy chính đối với nền an ninh
+                                lương
+                                thực. Việc phát hiện và chuẩn đoán đúng bệnh cây trồng là cần thiết để sử dụng đúng
+                                thuốc trừ
+                                sâu loại bỏ tất cả các bệnh càng nhanh càng tốt cũng như cứu chính chúng ta khỏi sự tàn
+                                phá của
+                                mùa màng.</i></b></p>
+                </div>
+            </div>
+        </div>
+        <!-- end featured-post -->
+        <div id="wp-content" class="container">
+            <div id="content">
+                <div class="box new-post">
+                    <div class="box-head">
+                        <h3>BÀI VIẾT</h3>
+                    </div>
+                    <div class="box-body">
+                        <ul class="list-post">
+                            <li>
+                                <a href="https://nongnghiep.vn/tao-lap-he-sinh-thai-giua-co-quan-quan-ly-va-hiep-hoi-chan-nuoi-d335717.html"
+                                    class="post-thumb">
+                                    <img src="{{url_for('static',filename = 'images/post1.jpg' )}}"alt="">
+                                </a>
+                                <div class="more-info">
+                                    <a href="https://nongnghiep.vn/tao-lap-he-sinh-thai-giua-co-quan-quan-ly-va-hiep-hoi-chan-nuoi-d335717.html"
+                                        class="post-title">Tạo lập hệ sinh thái giữa cơ quan quản lý và hiệp hội
+                                        chăn
+                                        nuôi</a>
+                                    <div class="post-published">
+                                        <a href="" class="post-author">Do Khue</a>
+                                        <span class="post-date">20/11/2022</span>
+                                    </div>
+                                    <p class="post-excerpt">
+                                        Thứ trưởng Phùng Đức Tiến cam kết, không để hiệp hội nào đứng ngoài cuộc, không
+                                        bỏ doanh nghiệp nào lại phía sau trong quá trình xây dựng chuỗi giá trị ngành
+                                        chăn nuôi.
+                                    </p>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="https://nongnghiep.vn/hop-chuan-bi-ke-hoach-don-doan-kiem-tra-ec-ve-chong-iuu-d332886.html" class="post-thumb">
+                                    <img src="{{url_for('static',filename = 'images/post2.jpg' )}}" alt="">
+                                </a>
+                                <div class="more-info">
+                                    <a href="https://nongnghiep.vn/hop-chuan-bi-ke-hoach-don-doan-kiem-tra-ec-ve-chong-iuu-d332886.html" class="post-title">Họp chuẩn bị kế hoạch đón đoàn kiểm tra EC về chống
+                                        IUU</a>
+                                    <div class="post-published">
+                                        <a href="" class="post-author">Hoai Lien</a>
+                                        <span class="post-date">20/11/2022</span>
+                                    </div>
+                                    <p class="post-excerpt">
+                                        Sáng 22/9, Thứ trưởng Bộ NN-PTNT Phùng Đức Tiến chủ trì cuộc họp với 4 đơn vị
+                                        trực thuộc và VASEP trước khi triển khai hoạt động trong tháng cao điểm sắp tới.
+                                    </p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end content -->
+
+        <div id="footer">
+            <div class="container">
+                <div class="box logo-footer">
+                    <div class="box-head">
+                        <h3>TOMATO Disease</h3>
+                    </div>
+                    <div class="box-body">
+                        <a href="">
+                            <img src="{{url_for('static',filename = 'images/logo.png' )}}" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="box about-us">
+                    <div class="box-head">
+                        <h3>TOMATO Disease</h3>
+                    </div>
+                </div>
+                <div class="box follow-us">
+                    <div class="box-head">
+                        <h3>THEO DOI</h3>
+                    </div>
+                    <div class="box-body">
+                        <ul class="list-social d-flex">
+                            <li>
+                                <a href=""><i class="fa-brands fa-facebook"></i></a>
+                            </li>
+                            <li>
+                                <a href=""><i class="fa-brands fa-youtube"></i></a>
+                            </li>
+                            <li>
+                                <a href=""><i class="fa-brands fa-instagram"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end footer -->
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,15 @@
+
+.justify-content-between{
+    justify-content: space-between;
+}
+
+.d-flex{
+    display: flex;
+}
+
+.font-courier-new{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 30px;
+    font-weight: 600;
+    color: rgb(15, 15, 49);
+}

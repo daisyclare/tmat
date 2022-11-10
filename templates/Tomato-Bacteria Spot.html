@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/css/bootstrap.min.css"
+        integrity="sha384-VCmXjywReHh4PwowAiWNagnWcLhlEJLA5buUprzK8rxFgeH0kww/aWY76TfkUoSX" crossorigin="anonymous">
+
+    <title>Chuẩn đoán và điều trị</title>
+    <style>
+        body {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        * {
+            margin-top: 20px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        .border img {
+            border-radius: 15px;
+            border: 2px solid black;
+        }
+
+        .text-center {
+            text-align: center;
+            font-size: 40px;
+            font-weight: bold;
+        }
+
+        .img{
+            width: 400px;
+            height: 400px;
+        }
+        li{
+            text-align: justify
+        }
+    </style>
+
+</head>
+
+<body background="{{url_for('static',filename = 'images/Back.jpg')}}">
+    <div>
+        <h1 class="text-center">Dự đoán bệnh trên cây cà chua và <br> cách chữa bệnh</h1>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm">
+                <span class="border">
+                    <img src="{{url_for('static',filename = 'images/Tomato___Bacterial_spot.JPG')}}" alt="User Image">
+                </span>
+            </div>
+            
+            <div class="col-sm">
+                <div>
+                    <h2 style="padding: 15px; background-color: rgb(15, 15, 15); color: white;text-align: center;">
+                        {{pred_output}} </h2>
+                </div>
+                <div class="details">
+                    <h4><b> Điều trị : </b> </h4>
+                    <ul>
+                        <p>Thuốc diệt nấm bằng đồng là biện pháp điều trị bệnh đốm lá do vi khuẩn phổ biến nhất. Sử dụng
+                            thuốc diệt nấm đồng như một biện pháp phòng ngừa sau khi bạn đã gieo hạt giống nhưng trước khi
+                            bạn chuyển cây vào nhà cố định của chúng. Bạn có thể phun thuốc diệt nấm đồng trước hoặc sau khi
+                            mưa, nhưng không được xử lý bằng thuốc diệt nấm đồng khi trời đang mưa. Nếu bạn thấy các dấu
+                            hiệu của đốm lá do vi khuẩn, hãy phun thuốc diệt nấm đồng trong khoảng thời gian từ 7 đến 10
+                            ngày, sau đó phun lại trong một tuần sau khi cây được chuyển vào ruộng.
+                            Thực hiện các biện pháp bảo dưỡng 10 ngày một lần khi thời tiết khô ráo và năm đến bảy ngày một
+                            lần khi trời mưa.</p>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+                    
